@@ -84,7 +84,7 @@
     "TestSource2-MD5" "TestSource3-MD5" "TestTarFilesRename"
     "TestTar2FilesRename" "TestTar3FilesRename" "TestSuiteSize"
     "UpdatePOD" "InstallScript" "JarFiles" "AppBundles" "DocFiles"
-    "Shlibs" "RuntimeVars" "SplitOff" "SplitOff2" "SplitOff2"
+    "Shlibs" "RuntimeVars" "SplitOff" "SplitOff2" "SplitOff3"
     "SplitOff4" "SplitOff5" "Files" "PreInstScript" "PostInstScript"
     "PreRmScript" "PostRmScript" "ConfFiles" "InfoDocs" "DaemonicFile"
     "DaemonicName" "Homepage" "DescDetail" "DescUsage" "DescPackaging"
