@@ -21,16 +21,16 @@
 ;; MA 02111-1307 USA
 
 ;; TODO:
-;; 
+;;
 ;; * Find the correct regexp to higlight versions numbers and
-;;   and pseudo hashes					 
+;;   and pseudo hashes
 ;;
 ;; * Install, Remove, Build, Rebuild: write a function to find
 ;;   the package name. We still need to ask for user confirmation
 ;;   because some package may have variants that whose name won't
 ;;   be easy to resolve.
 ;;
-;; * Install, Remove, Build, Rebuild, Selfupdate, Index: find 
+;; * Install, Remove, Build, Rebuild, Selfupdate, Index: find
 ;;   a way to start a new process that does not hang when asking
 ;;   for a password.
 ;;
@@ -111,13 +111,13 @@
   "Highlight fields names in Fink mode.")
 
 (defconst fink-font-lock-keywords-2
-  (list 
+  (list
    (list fink-field-regexp '(1 font-lock-function-name-face))
    (list fink-percent-expansion-regexp '(1 font-lock-variable-name-face)))
   "Highlight fields names and percent expansion variables in Fink.")
 
 (defconst fink-font-lock-keywords-3
-  (list 
+  (list
    (list fink-field-regexp '(1 font-lock-function-name-face))
    (list fink-percent-expansion-regexp '(1 font-lock-variable-name-face))
    '("\([a-z0-9A-Z<>.-]\)" (1 font-lock-constant-face)))
@@ -166,7 +166,7 @@
 	  (indent-line-to cur-indent)
 	(indent-line-to 0))))
   "Indent line in Fink mode.")
-      
+
 (defun fink-package-names ()
   (let ((result nil))
     (save-excursion
@@ -182,7 +182,7 @@
     result))
 
 (defun fink-install-package (package)
-  "Install a Fink package" 
+  "Install a Fink package"
   (interactive
    (list
     (completing-read "Install package: "
@@ -193,7 +193,7 @@
   (shell-command (concat "fink install " package)))
 
 (defun fink-remove-package (package)
-  "Install a Fink package" 
+  "Install a Fink package"
   (interactive
    (list
     (completing-read "Remove package: "
@@ -204,7 +204,7 @@
   (shell-command (concat "fink remove " package)))
 
 (defun fink-update-package (package)
-  "Install a Fink package" 
+  "Install a Fink package"
   (interactive
    (list
     (completing-read "Update package: "
@@ -215,7 +215,7 @@
   (shell-command (concat "fink install " package)))
 
 (defun fink-build-package (package)
-  "Install a Fink package" 
+  "Install a Fink package"
   (interactive
    (list
     (completing-read "Install package: "
@@ -226,7 +226,7 @@
   (shell-command (concat "fink install " package)))
 
 (defun fink-rebuild-package (package)
-  "Install a Fink package" 
+  "Install a Fink package"
   (interactive
    (list
     (completing-read "Install package: "
@@ -300,7 +300,7 @@
     ["Visit Fink Developers Wiki" (fink-visit-devel-wiki) t]
     "--"
     ["Customize" (customize-group "fink") t]))
- 
+
 (defun fink-mode ()
   (interactive)
   (kill-all-local-variables)
@@ -317,6 +317,3 @@
 (provide 'fink-mode)
 
 ;;; fink-mode.el ends here
-
-
-
