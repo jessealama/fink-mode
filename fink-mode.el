@@ -53,7 +53,7 @@
 
 (defconst fink-fields
   '("Package" "Version" "Revision" "Architecture" "Epoch"
-    "Description" "Type" "License" "Maintainer" "Info2" "Depends"
+    "Description" "Type" "License" "Maintainer" "Info2" "Info3" "Depends"
     "BuildDepends" "Provides" "Conflicts" "BuildConflicts" "Replaces"
     "Recommends" "Suggests" "Enhances" "Pre-Depends" "Essential"
     "BuildDependsOnly" "CustomMirror" "Source" "Source2" "Source3"
