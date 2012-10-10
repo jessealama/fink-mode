@@ -1,4 +1,4 @@
-.PHONY: all
+.PHONY: all clean
 
 elisp-files = fink-mode
 els = $(addsuffix .el,$(elisp-files))
