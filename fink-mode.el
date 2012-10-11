@@ -272,7 +272,7 @@
   (browse-url  "http://finkproject.org/doc/packaging/index.php"))
 
 (defun fink-visit-devel-wiki ()
-  "Visit Fink Developers Wiki"
+  "Visit the Fink Developers Wiki"
   (require 'browse-url)
   (browse-url  "http://wiki.finkproject.org/index.php/Fink"))
 
