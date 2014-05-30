@@ -1,4 +1,4 @@
-.PHONY: all
+.PHONY: all clean install
 
 elisp-files = fink-mode
 els = $(addsuffix .el,$(elisp-files))
@@ -8,6 +8,9 @@ emacs-backups = $(addsuffix ~,$(editable-files))
 
 # change accordingly
 emacs = /Applications/Emacs.app/Contents/MacOS/Emacs
+empty :=
+install-root = $(if $(HOME),$(HOME),$(empty))
+install-dir = $(install-root)/share/emacs/site-lisp/fink
 
 # functions
 
@@ -24,3 +27,8 @@ all: $(elcs)
 clean:
 	rm -f $(emacs-backups)
 	rm -f $(elcs)
+
+install: $(elcs)
+	mkdir -p $(install-dir)
+	for el in $(els); do cp $$el $(install-dir); done
+	for elc in $(elcs); do cp $$elc $(install-dir); done

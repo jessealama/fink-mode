@@ -189,7 +189,6 @@
                      (mapcar #'(lambda (x) (cons x 0))
                              (fink-package-names))
                      nil t)))
-  (interactive)
   (shell-command (concat "fink install " package)))
 
 (defun fink-remove-package (package)
@@ -200,7 +199,6 @@
                      (mapcar #'(lambda (x) (cons x 0))
                              (fink-package-names))
                      nil t)))
-  (interactive)
   (shell-command (concat "fink remove " package)))
 
 (defun fink-update-package (package)
@@ -211,7 +209,6 @@
                      (mapcar #'(lambda (x) (cons x 0))
                              (fink-package-names))
                      nil t)))
-  (interactive)
   (shell-command (concat "fink install " package)))
 
 (defun fink-build-package (package)
@@ -222,7 +219,6 @@
                      (mapcar #'(lambda (x) (cons x 0))
                              (fink-package-names))
                      nil t)))
-  (interactive)
   (shell-command (concat "fink install " package)))
 
 (defun fink-rebuild-package (package)
@@ -233,7 +229,6 @@
                      (mapcar #'(lambda (x) (cons x 0))
                              (fink-package-names))
                      nil t)))
-  (interactive)
   (shell-command (concat "fink install " package)))
 
 (defun fink-selfupdate ()
@@ -277,7 +272,7 @@
   (browse-url  "http://finkproject.org/doc/packaging/index.php"))
 
 (defun fink-visit-devel-wiki ()
-  "Visit Fink Developers Wiki"
+  "Visit the Fink Developers Wiki"
   (require 'browse-url)
   (browse-url  "http://wiki.finkproject.org/index.php/Fink"))
 
