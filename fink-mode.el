@@ -88,7 +88,7 @@
     "SplitOff4" "SplitOff5" "Files" "PreInstScript" "PostInstScript"
     "PreRmScript" "PostRmScript" "ConfFiles" "InfoDocs" "DaemonicFile"
     "DaemonicName" "Homepage" "DescDetail" "DescUsage" "DescPackaging"
-    "DescPort" "DefaultScript")
+    "DescPort" "DefaultScript" "UseMaxBuildJobs")
   "List of Fink fields")
 
 (defconst fink-field-regexp
